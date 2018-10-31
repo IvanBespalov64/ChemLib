@@ -39,58 +39,60 @@ public abstract class Agents {
 	public static Metal Pt = new Metal("Pt", AgentStat.hard);
 	public static Metal Au = new Metal("Au", AgentStat.hard);
 
-	public static Agent Li_p = new Agent("Li+", AgentStat.ion, true);
-	public static Agent Rb_p = new Agent("Rb+", AgentStat.ion, true);
-	public static Agent K_p = new Agent("K+", AgentStat.ion, true);
-	public static Agent Ba_2p = new Agent("Ba++", AgentStat.ion, true);
-	public static Agent Sr_2p = new Agent("Sr++", AgentStat.ion, true);
-	public static Agent Ca_2p = new Agent("Ca++", AgentStat.ion, true);
-	public static Agent Na_p = new Agent("Na+", AgentStat.ion, true);
-	public static Agent Al_3p = new Agent("Al+++", AgentStat.ion, true);
-	public static Agent Mg_2p = new Agent("Mg++", AgentStat.ion, true);
-	public static Agent Cr_3p = new Agent("Cr+++", AgentStat.ion, true);
-	public static Agent Zn_2p = new Agent("Zn++", AgentStat.ion, true);
-	public static Agent Fe_2p = new Agent("Fe++", AgentStat.ion, true);
-	public static Agent Fe_3p = new Agent("Fe+++", AgentStat.ion, true);
-	public static Agent Cd_2p = new Agent("Cd++", AgentStat.ion, true);
-	public static Agent Co_2p = new Agent("Co++", AgentStat.ion, true);
-	public static Agent Ni_2p = new Agent("Ni++", AgentStat.ion, true);
-	public static Agent Sn_2p = new Agent("Sn++", AgentStat.ion, true);
-	public static Agent Pb_4p = new Agent("Pb++++", AgentStat.ion, true);
-	public static Agent Pb_2p = new Agent("Pb++", AgentStat.ion, true);
-	public static Agent H_p = new Agent("H+", AgentStat.ion, false);
-	public static Agent H_n = new Agent("H-", AgentStat.ion, false);
-	public static Agent Sb_3p = new Agent("Sb+++", AgentStat.ion, true);
-	public static Agent Bi_3p = new Agent("Bi+++", AgentStat.ion, true);
-	public static Agent Bi_5p = new Agent("Bi+++++", AgentStat.ion, true);
-	public static Agent Cu_2p = new Agent("Cu++", AgentStat.ion, true);
-	public static Agent Cu_p = new Agent("Cu+", AgentStat.ion, true);
-	public static Agent Hg_2p = new Agent("Hg++", AgentStat.ion, true);
-	public static Agent Ag_p = new Agent("Ag+", AgentStat.ion, true);
-	public static Agent Pd_p = new Agent("Pd+", AgentStat.ion, true);
-	public static Agent Pd_2p = new Agent("Pd++", AgentStat.ion, true);
-	public static Agent Pd_3p = new Agent("Pd+++", AgentStat.ion, true);
-	public static Agent Pd_4p = new Agent("Pd++++", AgentStat.ion, true);
-	public static Agent Pt_2p = new Agent("Pt++", AgentStat.ion, true);
-	public static Agent Pt_4p = new Agent("Pt++++", AgentStat.ion, true);
-	public static Agent Au_p = new Agent("Au+", AgentStat.ion, true);
+	public static Agent Li_p = new Agent("Li+", AgentStat.ion, true, false);
+	public static Agent Rb_p = new Agent("Rb+", AgentStat.ion, true, false);
+	public static Agent K_p = new Agent("K+", AgentStat.ion, true, false);
+	public static Agent Ba_2p = new Agent("Ba++", AgentStat.ion, true, false);
+	public static Agent Sr_2p = new Agent("Sr++", AgentStat.ion, true, false);
+	public static Agent Ca_2p = new Agent("Ca++", AgentStat.ion, true, false);
+	public static Agent Na_p = new Agent("Na+", AgentStat.ion, true, false);
+	public static Agent Al_3p = new Agent("Al+++", AgentStat.ion, true, false);
+	public static Agent Mg_2p = new Agent("Mg++", AgentStat.ion, true, false);
+	public static Agent Cr_3p = new Agent("Cr+++", AgentStat.ion, true, false);
+	public static Agent Zn_2p = new Agent("Zn++", AgentStat.ion, true, false);
+	public static Agent Fe_2p = new Agent("Fe++", AgentStat.ion, true, false);
+	public static Agent Fe_3p = new Agent("Fe+++", AgentStat.ion, true, false);
+	public static Agent Cd_2p = new Agent("Cd++", AgentStat.ion, true, false);
+	public static Agent Co_2p = new Agent("Co++", AgentStat.ion, true, false);
+	public static Agent Ni_2p = new Agent("Ni++", AgentStat.ion, true, false);
+	public static Agent Sn_2p = new Agent("Sn++", AgentStat.ion, true, false);
+	public static Agent Pb_4p = new Agent("Pb++++", AgentStat.ion, true, false);
+	public static Agent Pb_2p = new Agent("Pb++", AgentStat.ion, true, false);
+	public static Agent H_p = new Agent("H+", AgentStat.ion, false, false);
+	public static Agent H_n = new Agent("H-", AgentStat.ion, false, false);
+	public static Agent Sb_3p = new Agent("Sb+++", AgentStat.ion, true, false);
+	public static Agent Bi_3p = new Agent("Bi+++", AgentStat.ion, true, false);
+	public static Agent Bi_5p = new Agent("Bi+++++", AgentStat.ion, true, false);
+	public static Agent Cu_2p = new Agent("Cu++", AgentStat.ion, true, false);
+	public static Agent Cu_p = new Agent("Cu+", AgentStat.ion, true, false);
+	public static Agent Hg_2p = new Agent("Hg++", AgentStat.ion, true, false);
+	public static Agent Ag_p = new Agent("Ag+", AgentStat.ion, true, false);
+	public static Agent Pd_p = new Agent("Pd+", AgentStat.ion, true, false);
+	public static Agent Pd_2p = new Agent("Pd++", AgentStat.ion, true, false);
+	public static Agent Pd_3p = new Agent("Pd+++", AgentStat.ion, true, false);
+	public static Agent Pd_4p = new Agent("Pd++++", AgentStat.ion, true, false);
+	public static Agent Pt_2p = new Agent("Pt++", AgentStat.ion, true, false);
+	public static Agent Pt_4p = new Agent("Pt++++", AgentStat.ion, true, false);
+	public static Agent Au_p = new Agent("Au+", AgentStat.ion, true, false);
 
 	
-	public static Agent NaCl = new Agent("NaCl", AgentStat.hard, true);
-	public static Agent HCl = new Agent("HCl", AgentStat.liquid, true);
+	public static Salt NaCl = new Salt("NaCl", AgentStat.hard, true, new Pair());
+	//public static Acid HCl = new Acid("HCl", AgentStat.liquid, true, Agents.Cl_n);
 	public static Agent H2O = new Agent("H2O", AgentStat.liquid, false);
 	
 	
-	public static Hydroxide NaOH = new Hydroxide("NaOH", AgentStat.hard, true);
+	public static Hydroxide NaOH = new Hydroxide("NaOH", AgentStat.hard, true, Agents.Na_p);
 	
 	//Agents' ions
-	public static Agent Cl_n = new Agent("Cl-", AgentStat.ion, true);
-	public static Agent OH_n = new Agent("OH-", AgentStat.ion, true);
+	public static Agent Cl_n = new Agent("Cl-", AgentStat.ion, true, false);
+	public static Agent OH_n = new Agent("OH-", AgentStat.ion, true, true);
 	
 	public static void init() {
+		NaCl.setDissat(new Pair(Na_p, Cl_n));
+		NaOH.setDissat(new Pair(Na_p, OH_n));
+		
 		mol.put(NaCl, 58.5);
 		mol.put(Na, 23.0);
-		mol.put(HCl, 36.5);
 		mol.put(H2, 2.0);
 		mol.put(H2O, 18.0);
 		
@@ -123,7 +125,7 @@ public abstract class Agents {
 						   
 		agents.put(NaCl.getType(), NaCl);
 		agents.put(NaOH.getType(), NaOH);
-		agents.put(HCl.getType(), HCl);
+		//agents.put(HCl.getType(), HCl);
 		agents.put(H2.getType(), H2);
 		
 		agents.put(Li.getType(), Li);
@@ -170,24 +172,4 @@ public abstract class Agents {
 		return force.get(a) > force.get(b);
 	}
 	
-	public static Hydroxide getHydroxide(Metal a) {
-		if(a == Na)
-			return NaOH;
-		return null;
-	}
-	
-	/*public static boolean react(Agent a, Agent b) {
-		if((a == Na && b == H2O) || (a == H2O && b == Na))
-			return true;
-		if((a == Na && b == HCl) || (a == HCl && b == Na))
-			return true;
-		return false;
-	}
-	public static Agent[] getRes(Agent a, Agent b){
-		if((a == Na && b == H2O) || (a == H2O && b == Na))
-			return new Agent[] {NaOH, H2};
-		if((a == Na && b == HCl) || (a == HCl && b == Na))
-			return new Agent[] {NaCl, H2};
-		return null;
-	} */
 }

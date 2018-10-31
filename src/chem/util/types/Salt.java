@@ -9,29 +9,33 @@ public class Salt extends NonMetal{
 	String type;
 	AgentStat stat;
 	boolean dissat;
+	public Pair<Agent, Agent> dissat_p;
 
-	public Salt(String type, AgentStat stat, boolean dissat) {
+	public Salt(String type, AgentStat stat, boolean dissat, Pair<Agent, Agent> dissat_p) {
 		super(type, stat, dissat);
 		this.type = type;
 		this.stat = stat;
 		this.dissat = dissat;
+		this.dissat_p = dissat_p;
 	}
-
+	
+	public void setKatoin(Agent a) {
+		this.dissat_p.a = a;
+	}
+	
+	public void setAnion(Agent a) {
+		this.dissat_p.b = a;
+	}
+	
+	public void setDissat(Pair<Agent, Agent> a) {
+		this.dissat_p = a;
+	}
+	
 	public Agent getKation() {
-		String tmp = type;
-		tmp.replaceAll(")", "");
-		tmp.replaceAll("(", "");
-		for (HashMap.Entry<Agent, Agent[]> pair: Agents.ions.entrySet())
-	    {
-			if(tmp.contains(pair.getKey().getType()) && tmp.indexOf(pair.getKey().getType()) == 0) {
-				//foo:
-				int kat_ind, an_ind;
-				String kation = tmp.substring(0, pair.getKey().getType().length());
-				kat_ind = Integer.parseInt(tmp.substring(pair.getKey().getType().length(), pair.getKey().getType().length() + 1));
-				
-			}
-	    }
-		return null;
+		return dissat_p.a;
 	} 
+	public Agent getAnion() {
+		return dissat_p.b;
+	}
 	
 }

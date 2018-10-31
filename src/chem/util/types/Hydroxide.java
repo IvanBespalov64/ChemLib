@@ -3,11 +3,12 @@ package chem.util.types;
 import chem.util.*;
 
 public class Hydroxide extends Salt {
-	static String type;
-	static String prevail = "OH";
+	String type;
+	
+	int pH = 14;
 
-	public Hydroxide(String type, AgentStat stat, boolean dissat) {
-		super(type, stat, dissat);
+	public Hydroxide(String type, AgentStat stat, boolean dissat, Agent base_ion) {
+		super(type, stat, dissat, new Pair(base_ion, Agents.OH_n));
 		this.type = type;
 	}
 	

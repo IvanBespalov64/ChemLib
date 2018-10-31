@@ -17,7 +17,7 @@ public class Alkaline extends Metal {
 		ArrayList<Agent> res = new ArrayList<>();
 		for(Agent b : a) {
 			if(b == Agents.H2O) {
-				return Agents.getHydroxide(this).react(a);
+				return new Agent().getHydroxide(this).react(a);
 			}
 			/*if(b instanceof Hydroxide && b.getSubType().equals("Amphoteric")) {
 				
